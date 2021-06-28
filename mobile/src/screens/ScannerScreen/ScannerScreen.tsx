@@ -89,10 +89,6 @@ const ScannerScreen: React.FC = () => {
           }
         } catch (err) {
           // Not a correct barcode
-          setToastContent({
-            message: 'Merchant not found. Please try again',
-            type: 'error',
-          });
         }
 
         // Reset state
