@@ -21,9 +21,9 @@ import {
 } from '@expo-google-fonts/raleway';
 import React, { useEffect, useState } from 'react';
 import 'react-native-gesture-handler';
-import AppLoading from 'expo-app-loading';
 import { NavigationContainer } from '@react-navigation/native';
 import { BarCodeScanner } from 'expo-barcode-scanner';
+import {Text, View} from "react-native-ui-lib";
 import ErrorScreen from './src/components/ErrorScreen';
 import AppStackNavigator from './src/screens/AppStackNavigator';
 import initTheme from './src/util/theme/theme';
@@ -62,7 +62,7 @@ const App: React.FC = () => {
   }, []);
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return (<View><Text>Please Wait</Text></View>);
   }
 
   if (!hasScannerPermissions) {
