@@ -2,6 +2,7 @@
 
 **Mobile**
 The `mobile/` directory hosts a React Native application for the Rapyd OnePay demo. It is bootstrapped with [Expo](https://expo.io/).
+Test barcodes can be found in the `test-barcodes/` directory.
 
 **Web (REST API)**
 This is a [Next.js](https://nextjs.org/) project serving as a REST API for the Rapyd OnePay
